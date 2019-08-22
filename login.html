@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN PAGE</title>
+</head>
+<body>
+<form runat=server>
+	<asp:ValidationSummaryrunat=server headertext="THER WERE ERRORS ON THE PAGE"/>
+<form runat=server>
+	<p>Please enter user ID nad password:</p>
+	<table>
+		<tr><td>
+			<asp:RequiredFieldValidator runat=server ControlToValidate=txtName ErrorMessage="user ID is required.">*</asp:RequiredFieldValidator>
+		</td>
+        <td>UserName:</td>
+        <td><input type="text" runat=server id=txtname></td>
+	</tr>
+	<tr>
+		<td>
+			<asp:RegularExpressionValidator runat=server display=dynamicControlToValidate="txtPWord" ErrorMessage="Password contain one of @#$%^&*()." ValidationExpression=".*[@#$%^&*/].*"/>
+            <asp:RegularExpressionValidator runat=server display=dynamic controlToValidate="txtPWord" ErrorMessage="Password must be 4-12 non-blank characters." ValidationExpression="{^\s}{4,12}" />
+		</td>
+		<td>Password:</td>
+		<td><input type="password" runat=server id=txtPword></td>
+	</tr>
+	</table></br>
+	<input type="submit" runat=server id="cmdSubmit" value=submit onServerClick=OnSubmit>
+</form>
+</form
+</body>
+</html>
