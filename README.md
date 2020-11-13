@@ -1,4 +1,4 @@
-# STAYFIT-WEBSITE
+# STAYFIT WEBSITE
 StayFit is a website that tracks diet and exercise to determine optimal caloric intake and nutrients for the users' goals and uses gamification elements to motivate users.
 How does StayFit work?
 Using StayFit is very simple. Here's how our basic process works: 
